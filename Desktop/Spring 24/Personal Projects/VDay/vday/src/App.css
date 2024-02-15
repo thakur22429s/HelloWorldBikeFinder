@@ -1,0 +1,75 @@
+body {
+  overflow: hidden;
+}
+
+/* Custom class for Yes button styles */
+.yes-button {
+  font-family: 'Owen', sans-serif;
+  background-color: #16a34a; /* bg-green-600 */
+  color: #fff; /* text-white */
+  font-weight: normal; /* font-bold */
+  padding: 8px 16px; /* py-2 px-4 */
+  border-radius: 8px; /* rounded */
+  margin-top: 24px;
+  margin-right: 8px; /* mr-4 */
+}
+
+.yes-button:hover {
+  background-color: #15803d; /* hover:bg-green-700 */
+}
+
+/* Custom class for No button styles */
+.no-button {
+  font-family: 'Owen', sans-serif;
+  background-color: #dc2626; /* bg-red-600 */
+  color: #fff; /* text-white */
+  font-weight: normal; /* font-bold */
+  padding: 8px 16px; /* py-2 px-4 */
+  border-radius: 8px; /* rounded */
+  margin-top: 24px;
+  margin-left: 8px;
+}
+
+.no-button:hover {
+  background-color: #b91c1c; /* hover:bg-red-700 */
+}
+
+#cloud {
+  background: rgb(243, 243, 243);
+  width: 300px; 
+  height: 80px;
+  border-radius: 150px;	
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  animation: move 10s infinite;
+}
+
+#cloud:after {
+  content: '';
+  background: rgb(239, 239, 239);
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+}
+
+#cloud:before {
+  content: '';
+  background: rgb(235, 235, 235);
+  position: absolute;
+  width: 170px;
+  height: 130px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-30px);
+  }
+}
